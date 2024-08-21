@@ -14,7 +14,7 @@ class RadiobuttonDemoPage(BasePage):
 
     def __init__(self, driver):
         super().__init__(driver)
-        self.get_rid_off_coockies()
+        self.get_rid_off_cookies()
 
     def change_to_radio_button_page(self):
         self.click(self.radio_button_demo_location)

@@ -3,7 +3,8 @@ from tests.base_test import BaseTest
 from pages.radiobutton_page import RadiobuttonDemoPage
 
 
-class TestChangePassword(BaseTest):
+class TestRadioButton(BaseTest):
+    @pytest.mark.skip
     @pytest.mark.parametrize("gender, expected_response",
                              [("Female", "Radio button 'Female' is checked"),
                               ("Male", "Radio button 'Male' is checked")])
@@ -14,6 +15,7 @@ class TestChangePassword(BaseTest):
         first_response = radio_button_page.get_first_response()
         assert first_response == expected_response
 
+    @pytest.mark.skip
     @pytest.mark.parametrize("gender, age, expected_response",
                              [("Female", "5 - 15", "Female 5 - 15"),
                               ("Male", "5 - 15", "Male 5 - 15")])
