@@ -21,7 +21,7 @@ def initialize_driver(request):
         driver = webdriver.Edge(options=options)
     request.cls.driver = driver
     print("Browser: ", request.param)
-    driver.get(TestData.url)
+    driver.get(TestData.playground_url)
     yield
     print("Close Driver")
     driver.close()
