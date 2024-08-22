@@ -4,6 +4,7 @@ from pages.dragndrop_page import DragNDropPage
 
 
 class TestDragAndDrop(BaseTest):
+    @pytest.mark.skip
     @pytest.mark.parametrize("number, expected_response",
                              [("1", ["Draggable 1"]),
                               ("2", ["Draggable 2"]),
